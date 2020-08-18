@@ -32,7 +32,7 @@ y_merge <- rbind(y_train, y_test)
 subject_merge <- rbind(subject_train, subject_test)
 newdata <- cbind(x_merge, y_merge, subject_merge)
 
-# 2.Extracts only the measurements on the mean and standard deviation for each 
+# 2.Extract only the measurements on the mean and standard deviation for each 
 # measurement.
 # To match metacharacters in R, use a double backslash "\\"
 mean_std_features <- grep(".*mean\\(\\)|std\\(\\)", features$V2)
