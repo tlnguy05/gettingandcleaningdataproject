@@ -30,7 +30,7 @@ activity_labels <- fread("./UCI HAR Dataset/activity_labels.txt")
 x_merge <- rbind(x_train, x_test)
 y_merge <- rbind(y_train, y_test)
 subject_merge <- rbind(subject_train, subject_test)
-newdata <- cbind(x_merge, y_merge, subject_merge)
+
 
 # 2.Extracts only the measurements on the mean and standard deviation for each 
 # measurement.
